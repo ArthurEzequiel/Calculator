@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/modules/media-queries.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="header">
+    <h2 class="nav-text">Calc</h2>
+  </div>
+  <div class="section">
+
+    <div class="circle" style="background: linear-gradient(180deg, #B94848 0%, rgba(185, 72, 72, 0) 85.64%); border-radius: 50%;"></div>
+
+  <div class="main" style="z-index: 100;">
+    <div class="theme-selector" style="display: none;">
+      <div class="theme-heading"><p>THEME</p></div>
+      <div class="theme-slider">
+        <div class="theme-slider-values">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <input type="range" id="themeSelector" min="1" max="3" value="1">
+      </div>
+    </div>
+    <div class="display">
+      <p class="previous-inputs"></p>
+      <p class="current-display">0</p>
+    </div>
+    <div class="keypad">
+      <button class="btn" value="7">7</button>
+      <button class="btn" value="8">8</button>
+      <button class="btn" value="9">9</button>
+      <button class="btn del-btn" value="del">DEL</button>
+      <button class="btn" value="4">4</button>
+      <button class="btn" value="5">5</button>
+      <button class="btn" value="6">6</button>
+      <button class="btn operator" value="+">+</button>
+      <button class="btn" value="1">1</button>
+      <button class="btn" value="2">2</button>
+      <button class="btn" value="3">3</button>
+      <button class="btn operator" value="-">-</button>
+      <button class="btn" value=".">.</button>
+      <button class="btn" value="0">0</button>
+      <button class="btn operator" value="÷">÷</button>
+      <button class="btn operator x" value="*">x</button>
+      <button class="btn btn-long reset-btn" value="reset">C</button>
+      <button class="btn btn-long result-btn" value="=">=</button>
+    </div>
+  </div>
+</div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
