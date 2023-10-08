@@ -77,8 +77,8 @@ input[type=range]::-ms-thumb {
 
 
 ::selection{
-  background-color:transparent;
-  color:transparent;
+  background-color:#0A0A0A;
+  color:#A84646;
 }
 
 -webkit-::selection{
@@ -103,7 +103,7 @@ html, body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(0.66deg, #0A0A0A 0.55%, #1E1E1E 92.79%);
+  background: #1D1C1C;
 }
 
 .section{ 
@@ -133,9 +133,8 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-image: url('/images/sec-back.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #A84646;
+  border-radius: 91% 9% 100% 0% / 0% 41% 59% 100%  ;
 }
 
 .p-p-initial{ 
@@ -158,7 +157,7 @@ body {
 }
 .header h2 {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 2em;
   color: #000;
 
 }
@@ -205,78 +204,78 @@ body {
   background-color: rgba(0, 0, 0, 0.486);
 }
 
-.current-display {
-  display: flex;
-  flex-direction: row-reverse;
-  overflow-x: auto;
-}
-.current-display::-webkit-scrollbar {
-  background-color: transparent;
-  height: 5px;
-}
-.current-display::-webkit-scrollbar-button {
-  width: 0;
-  height: 0;
-}
-.current-display::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  border-radius: 12px;
-}
-.current-display:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.486);
+.calculator {
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 1rem;
+  height: 60%;
 }
 
-.keypad {
+.display {
+  text-align: right;
+  background-color: #1F1F1F;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#display {
   width: 100%;
-  height: 420px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 28px;
-  border-radius: 8px;
-}
-
-.btn {
-  font-size: 20px;
-  border-radius: 8px;
-  width: 30px;
-  height: 55px;
-  padding-top: 3px;
+  font-size: 36px;
   border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.77);
-}
-.btn:active {
-  transform: translateY(3px);
-}
-
-.btn-long {
-  width: auto;
-}
-
-.del-btn, .reset-btn {
-  font-size: 24px;
-  color: #B94848;
-}
-
-.attribution {
-  margin-top: 24px;
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
-}/*# sourceMappingURL=main.css.map */
-
-.operator{ 
-  color: #B94848;
-}
-
-.result-btn{ 
+  padding: 20px;
+  background-color: #1F1F1F;
   color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  height: 65%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.operator {
+  background-color: transparent;
+  color: #B94848;
+}
+
+.calculate {
+  background-color: #B94848;
+  padding: 20px;
+  width: 100%;
+}
+
+.c-operator{ 
+  color: #B94848;
+}
+
+
+.main-calc{ 
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 
