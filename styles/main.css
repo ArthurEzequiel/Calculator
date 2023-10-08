@@ -264,6 +264,7 @@ button:hover {
   background-color: #B94848;
   padding: 20px;
   width: 100%;
+  transition: 500ms;
 }
 
 .c-operator{ 

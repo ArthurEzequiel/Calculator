@@ -3,12 +3,17 @@ function addToDisplay(value) {
 }
 
 function calculate() {
+    const expression = document.getElementById('display').value;
     let result;
     try {
-        result = eval(document.getElementById('display').value);
-        document.getElementById('display').value = result;
+        result = eval(expression);
+        if (result !== undefined) {
+            document.getElementById('display').value = result;
+        } else {
+            document.getElementById('display').value = '';
+        }
     } catch (error) {
-        document.getElementById('display').value = 'Erro';
+        document.getElementById('display').value = '';
     }
 }
 
